@@ -14,6 +14,9 @@ fn main() {
     assert_eq!(0_usize, list.len());
     list.push(100);
     assert_eq!(1_usize, list.len());
+    list.push(1);
+    list.push(5);
+    assert_eq!(3_usize, list.len());
 
     println!("END OF TESTS");
 }
