@@ -9,15 +9,14 @@ Dieses Projekt dient dem Üben von Rust anhand verschiedener Implementierungen v
 
 ## Struktur des Projekts
 Das Projekt enthält verschiedene Implementierungen, darunter sowohl eigene als auch jene aus Too Many Linked Lists:
-**Eigene Implementierungen**
 
-    - my_linked_list.rs – Erste intuitive Implementierung.
-    - generic_linked_list.rs – Generische Variante für beliebige Datentypen.
-    - iterable_linked_list.rs – Erweiterung um einen Iterator.
+**Eigene Implementierungen**
+- my_linked_list.rs – Erste intuitive Implementierung.
+- generic_linked_list.rs – Generische Variante für beliebige Datentypen.
+- iterable_linked_list.rs – Erweiterung um einen Iterator.
 
 **Implementierungen aus Too Many Linked Lists**
-
-    - *TODO*
+- *TODO*
 
 Jede Datei enthält eine Rust-Implementierung, die die jeweiligen Konzepte aus der Webseite anwendet.
 
