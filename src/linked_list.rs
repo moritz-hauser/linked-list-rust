@@ -2,6 +2,7 @@
 TODO:
 - Traits: Debug, Copy, Clone, Display
 - Für generische Datentypen
+- Iterator?
 */
 pub struct LinkedList {
     head: Option<Box<Node>>,
