@@ -1,5 +1,5 @@
-mod linked_list;
-use linked_list::LinkedList;
+mod my_linked_list;
+use my_linked_list::LinkedList;
 fn main() {
     // Tests für Linked List
     println!("START OF TESTS");
