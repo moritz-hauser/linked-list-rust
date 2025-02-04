@@ -1,9 +1,3 @@
-/*
-TODO:
-- Traits: Debug, Copy, Clone, Display
-- Für generische Datentypen
-- Iterator?
-*/
 pub struct LinkedList {
     head: Option<Box<Node>>,
     size: usize,
@@ -39,6 +33,10 @@ impl LinkedList {
     pub fn len(&self) -> usize {
         self.size
     }
+
+    pub fn peek(&self) -> Option<&i32> {
+        self.head.as_ref().map(|node| &node.info)
+    }
 } 
 
 impl Drop for LinkedList {
@@ -48,4 +46,32 @@ impl Drop for LinkedList {
             current = node.next.take();
         }
     }
+}
+
+pub fn run() {
+    let mut list = LinkedList::new();
+    
+    println!("Neue LinkedList erstellt.");
+    println!("Aktuelle Länge: {}", list.len());
+    
+    println!("Elemente hinzufügen: 10, 20, 30");
+    list.push(10);
+    list.push(20);
+    list.push(30);
+    
+    println!("Aktuelle Länge nach Push: {}", list.len());
+    
+    println!("Peek auf das erste Element: {:?}", list.peek());
+    
+    println!("Entferne ein Element: {:?}", list.pop());
+    println!("Peek nach Pop: {:?}", list.peek());
+    println!("Aktuelle Länge nach Pop: {}", list.len());
+    
+    println!("Entferne ein weiteres Element: {:?}", list.pop());
+    println!("Peek nach Pop: {:?}", list.peek());
+    
+    println!("Entferne ein weiteres Element: {:?}", list.pop());
+    println!("Peek nach Pop (Liste sollte leer sein): {:?}", list.peek());
+    
+    println!("Finale Länge: {}", list.len());
 }
