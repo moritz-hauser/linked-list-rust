@@ -49,6 +49,7 @@ impl<T> Drop for LinkedList<T> {
     }
 }
 
+// ----- TESTS -----
 pub fn run() {
     #[derive(Debug)]
     #[allow(dead_code)]

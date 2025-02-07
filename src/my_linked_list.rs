@@ -48,6 +48,7 @@ impl Drop for LinkedList {
     }
 }
 
+// ----- TESTS -----
 pub fn run() {
     let mut list = LinkedList::new();
     
